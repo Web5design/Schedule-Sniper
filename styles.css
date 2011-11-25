@@ -1,0 +1,122 @@
+html{
+  min-width: 1100px;
+}
+
+.field{
+    height: 25px; width: 300px;
+    font-size: 15px;
+    border: 3px #b0bac9 solid;
+    border-radius: 5px;
+    color: #7385a0;
+}
+
+#form{
+    font-family: helvetica;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+}
+
+#content{
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	position: relative;
+/*	overflow: hidden;*/
+}
+
+#target{
+	position: relative;
+	overflow: hidden;
+	top: -340px;
+	width: 300px;
+	left: 340px;
+	z-index: 5;
+	font-size: 2em;
+	text-align: center;
+	font-family: "Just Another Hand";
+}
+
+#badge {
+  -webkit-transform:rotate(-42deg);
+  -moz-transform: rotate(-42deg);
+  -o-transform: rotate(-42deg);
+  transform: rotate(-42deg);
+  background-attachment:initial;
+  background-clip:initial;
+  background-color:black;
+  background-image:initial;
+  background-origin:initial;
+  background-position:initial initial;
+  background-repeat:initial initial;
+  color:white;
+  display:block;
+  font-size:1.3em;
+  font-weight:bold;
+	font-family: helvetica;
+  left:-3em;
+  padding-bottom:0.25em;
+  padding-left:0.25em;
+  padding-right:1.25em;
+  padding-top:0.25em;
+  position:absolute;
+  text-align:center;
+  top:2.5em;
+  width:14em;
+
+	<!--[if IE]>
+	visibility: hidden;
+	<![endif]-->
+}
+#image{
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+}
+
+#tagline{
+	text-align: right;
+	color: #9fb2c2;
+}
+p{
+	padding: 0;
+	margin: 0;
+}
+.scroll-pane{
+	font-family: helvetica;
+	font-size: 15px;
+	position: absolute;
+	top: 116px;
+	right: -195px;
+	width: 250px;
+	height: 450px;
+	color: #c2c2d0;
+	padding-left: 15px;
+	overflow: auto;
+}
+
+#footer{
+	font-family: helvetica;
+	font-size: 11px;
+	text-align: center;
+	color: #c2c2d0;
+}
+
+.red{
+	color: red;
+	font-family: helvetica;
+}
+
+
+#hiddenshit{
+	visibility:hidden;
+}
+
+a, a:visited{
+  text-decoration:none;
+  color: #FF00C9;
+}
+
+a:hover{
+  color: #9B1D80;
+}
