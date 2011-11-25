@@ -101,25 +101,16 @@
   </div>
   	<?php
 
-    open();
-	
-  	function filter_that_shit($message){
-  		$message = trim($message);
-  		$message = strip_tags($message);
-  		$message = mysql_real_escape_string($message);
-  		return $message;
-  	}
-	
+    open();	
   	if(isset($_POST['p_subj_cd']) && isset($_POST['number']) && isset($_POST['p_course_no']) && isset($_POST['class_id'])){
   		$dept = filter_that_shit($_POST['p_subj_cd']);
   		$course = filter_that_shit($_POST['p_course_no']);
   		$class_id = filter_that_shit($_POST['class_id']);
   		$number = filter_that_shit($_POST['number']);
-  		$number = ereg_replace("[^A-Za-z0-9]", "", $number );
+  		$number = preg_replace("[^A-Za-z0-9]", "", $number );
 		
   		$poop = "INSERT INTO user_numbers VALUES ('', '$number')";
   		$result = mysql_query($poop);
-		
 		
   		$poop = "INSERT INTO class_users VALUES ('', '$number', '$dept', '$course', '$class_id', NOW())";
   		$result = mysql_query($poop);
@@ -128,7 +119,7 @@
   echo "<div id='target'>Yarp, I need coordinates, sir!</div>";
   	}
 	
-  	mysql_close($database_lover);
+  	mysql_close();
   	?>
   	</div>
   	

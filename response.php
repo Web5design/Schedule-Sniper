@@ -11,5 +11,5 @@
 		$poop = "INSERT INTO reviews VALUES ('', '$code', '$text')";
 		$result = mysql_query($poop);
 	}
-	mysql_close($database_lover);
+	mysql_close();
 ?>
