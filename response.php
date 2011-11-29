@@ -8,7 +8,7 @@
   open();
 	$text = filter_that_shit($text);
 	if(strlen($text) != 0){
-		$poop = "INSERT INTO reviews VALUES ('', '$code', '$text')";
+		$poop = "INSERT INTO reviews VALUES ('', '$code', '$text', NOW())";
 		$result = mysql_query($poop);
 	}
 	mysql_close();
