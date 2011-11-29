@@ -80,7 +80,7 @@
   <br>
   <div id="footer">
     <br>
-    may take up to three hours to snipe. go forth, my children, and learneth magical things!<br><br><br><a href="http://abe.is">abe.is</a>
+    may take up to three hours to snipe.<br>i am not responsible for any ruscrews you bring upon yourself by relying upon my services.<br>now, go forth, my children, and learneth magical things!
   	</div>
   <div class="scroll-pane">
   	<?php
