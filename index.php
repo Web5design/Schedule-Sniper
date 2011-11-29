@@ -80,7 +80,7 @@
   <br>
   <div id="footer">
     <br>
-    by abe stanway<br><a href="http://abe.is">abe.is</a>
+    may take up to three hours to snipe. go forth, my children, and learneth magical things!<br><br><br><a href="http://abe.is">abe.is</a>
   	</div>
   <div class="scroll-pane">
   	<?php
