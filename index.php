@@ -46,7 +46,7 @@
               <tr> 
                 <th style="text-align:left;"><label for="number">Phone Number<span class="red">*</span><br></label></th> 
                 <td> 
-                  <input type="text" class="field" id="p_subj_cd" tabindex="1" maxlength="15" name="number" size="20"> 
+                  <input type="text" class="field" id="p_subj_cd" tabindex="1" maxlength="10" name="number" size="20"> 
                 </td> 
               </tr> 
 
@@ -107,7 +107,7 @@
   		$course = filter_that_shit($_POST['p_course_no']);
   		$class_id = filter_that_shit($_POST['class_id']);
   		$number = filter_that_shit($_POST['number']);
-  		$number = preg_replace("[^A-Za-z0-9]", "", $number );
+  		$number = preg_replace("/\D/", "", $number );
 		
   		$poop = "INSERT INTO user_numbers VALUES ('', '$number')";
   		$result = mysql_query($poop);
